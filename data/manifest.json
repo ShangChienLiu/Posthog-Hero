@@ -1,0 +1,29 @@
+{
+  "repo": "PostHog/posthog",
+  "window": {
+    "since": "2026-03-15T21:49:08Z",
+    "until": "2026-06-13T21:49:08Z",
+    "days": 90
+  },
+  "generated_at": "2026-06-13T21:49:11Z",
+  "counts": {
+    "merged_prs": 8435,
+    "closed_issues_total": 316,
+    "closed_issues_downloaded": 316,
+    "updated_issues_total": 1028,
+    "updated_issues_downloaded": 1028,
+    "recent_releases_downloaded": 297,
+    "actions_workflows_downloaded": 100,
+    "actions_runs_total_count_only": 996764,
+    "master_commits": 8294,
+    "master_commit_file_rows": 68426,
+    "engineer_rollup_rows": 380
+  },
+  "caveats": [
+    "Merged PR index data is complete for the window from date-bucketed GitHub REST Search. Review identities, review bodies, and review total counts are not included in the all-PR pass and should be fetched later for the top-candidate subset.",
+    "Commit and per-file path changes are complete for the shallow master-branch history included in the clone depth, not for unmerged branches. Line-level numstat is intentionally skipped because it is slow at PostHog's 90-day scale and would bias the analysis toward LoC.",
+    "Actions run count is recorded, but individual run records are not downloaded because the count is too large for a 90-minute assignment-scale dataset.",
+    "GitHub-only data cannot directly measure product adoption, customer satisfaction, meetings, flow-state time, or production incidents unless linked external systems are added later.",
+    "Full PR body text and linked issue node details are intentionally not downloaded in the all-PR pass to keep GitHub GraphQL responses reliable at PostHog's volume; they can be fetched later for the top-candidate subset."
+  ]
+}

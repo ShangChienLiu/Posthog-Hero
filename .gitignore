@@ -1,0 +1,11 @@
+node_modules/
+dist/
+data/external/
+data/raw/
+.vercel
+appmap.log
+*.log
+.env
+.env.*
+*.pem
+*.key

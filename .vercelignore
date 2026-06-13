@@ -1,0 +1,4 @@
+appmap.log
+/data/
+dist/
+node_modules/
